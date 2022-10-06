@@ -3,5 +3,5 @@
   "compilerOptions": {
     "allowJs": true
   },
-  "include": ["src", ".*.js", "*.js", "**/*.test.ts", "next-env.d.ts"]
+  "include": ["src", ".*.js", "*.js", "**/*.test.ts"]
 }

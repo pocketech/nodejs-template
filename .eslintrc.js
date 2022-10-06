@@ -5,33 +5,23 @@
 module.exports = {
   root: true,
   env: {
-    browser: true,
     es2022: true,
     node: true,
-  },
-  settings: {
-    react: {
-      version: "detect",
-    },
   },
   parserOptions: {
     project: "./tsconfig.eslint.json",
     tsconfigRootDir: __dirname,
+    sourceType: 'module'
   },
   extends: [
     "eslint:all",
     "plugin:@typescript-eslint/all",
-    "plugin:react/all",
-    "plugin:react-hooks/recommended",
     "plugin:import/recommended",
     "plugin:import/typescript",
-    "plugin:import/react",
     "plugin:promise/recommended",
-    "plugin:jsx-a11y/strict",
-    "plugin:@next/next/core-web-vitals",
     "prettier",
   ],
-  plugins: ["unused-imports"],
+  plugins: ["unused-imports", "unicorn"],
   overrides: [],
   rules: {
     "arrow-body-style": ["error", "always"],
@@ -53,6 +43,8 @@ module.exports = {
     "one-var": ["error", "never"],
     "sort-imports": "off",
     "sort-keys": "off",
+
+    "unicorn/prefer-node-protocol": ["error", {"checkRequire": true}],
 
     "@typescript-eslint/prefer-readonly-parameter-types": "off",
     "@typescript-eslint/no-type-alias": "off",
@@ -123,23 +115,6 @@ module.exports = {
     ],
     "import/newline-after-import": "error",
 
-    "react/jsx-max-depth": "off",
-    "react/jsx-no-literals": "off",
-    "react/prop-types": "off",
-    "react/react-in-jsx-scope": "off",
-    "react/jsx-props-no-spreading": "off",
-    "react/jsx-filename-extension": [
-      "error",
-      { allow: "as-needed", extensions: [".tsx"] },
-    ],
-    "react/function-component-definition": [
-      "error",
-      {
-        namedComponents: "arrow-function",
-        unnamedComponents: "arrow-function",
-      },
-    ],
-    "jsx-a11y/anchor-is-valid": "off",
     "unused-imports/no-unused-imports": "error",
     "unused-imports/no-unused-vars": [
       "warn",
