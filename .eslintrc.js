@@ -44,7 +44,7 @@ module.exports = {
     "sort-imports": "off",
     "sort-keys": "off",
 
-    "unicorn/prefer-node-protocol": ["error", { checkRequire: true }],
+    "unicorn/prefer-node-protocol": "error",
 
     "@typescript-eslint/prefer-readonly-parameter-types": "off",
     "@typescript-eslint/no-type-alias": "off",
