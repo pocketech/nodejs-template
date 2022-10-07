@@ -29,6 +29,7 @@ module.exports = {
     "line-comment-position": "off",
     "max-lines-per-function": "off",
     "multiline-comment-style": "off",
+    "no-console": "off",
     "no-inline-comments": "off",
     "no-nested-ternary": "off",
     "no-restricted-syntax": [
