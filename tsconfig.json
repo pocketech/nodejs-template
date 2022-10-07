@@ -17,6 +17,6 @@
     "incremental": true
   },
   "extends": "@tsconfig/strictest/tsconfig.json",
-  "include": ["**/*.ts", "**/*.tsx"],
+  "include": ["**/*.ts"],
   "exclude": ["node_modules"]
 }
