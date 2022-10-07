@@ -11,7 +11,7 @@ module.exports = {
   parserOptions: {
     project: "./tsconfig.eslint.json",
     tsconfigRootDir: __dirname,
-    sourceType: 'module'
+    sourceType: "module",
   },
   extends: [
     "eslint:all",
@@ -44,7 +44,7 @@ module.exports = {
     "sort-imports": "off",
     "sort-keys": "off",
 
-    "unicorn/prefer-node-protocol": ["error", {"checkRequire": true}],
+    "unicorn/prefer-node-protocol": ["error", { checkRequire: true }],
 
     "@typescript-eslint/prefer-readonly-parameter-types": "off",
     "@typescript-eslint/no-type-alias": "off",
