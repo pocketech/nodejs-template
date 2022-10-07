@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "nodemon",
     "lint": "run-p lint:*",
-    "lint:eslint": "next lint",
+    "lint:eslint": "eslint --cache .",
     "lint:prettier": "prettier --check .",
     "lint:typecheck": "tsc --noEmit",
     "fix": "run-s -c fix:eslint fix:prettier",
